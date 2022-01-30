@@ -1,0 +1,7 @@
+from collections import deque
+ d=deque()
+ n=int(input())
+for _ in range(n):
+     method,*value=input().split()
+     getattr(d,method)(*value)
+ [print(x, end=' ') for x in d]
