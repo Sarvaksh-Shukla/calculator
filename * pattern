@@ -1,0 +1,15 @@
+if __name__=="__main__":
+    print ("Enter no. of rows")
+    n=int(input())
+    print("enter 1or 0")
+    value=bool(int(input()))
+    if value==True:
+        for i in range(0,n+1):
+            for j in range(0,i+1):
+                print("*",end=" ")
+            print()
+    elif value==False:
+        for i in range(n,0,-1):
+            for j in range(0,i):
+                print("*",end=" ")
+            print()
